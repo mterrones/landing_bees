@@ -11,6 +11,12 @@ main {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+.card-body {
+  box-shadow: -3px 23px 27px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -3px 23px 27px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px 23px 27px 0px rgba(0,0,0,0.75);
+}
+
 .card-form {
   width: 70%
 }
@@ -42,7 +48,7 @@ main {
 
 @media (max-width: 1366px) {
   .abeja {
-    margin-top: calc(100vh - 600px) !important;
+    margin-top: calc(100vh - 550px) !important;
   }
 }
 
