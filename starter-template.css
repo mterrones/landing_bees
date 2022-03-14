@@ -42,13 +42,13 @@ main {
 
 @media (max-width: 2000px) {
   .abeja {
-    margin-top: calc(100vh - 700px) !important;
+    margin-top: calc(100vh - 600px) !important;
   }
 }
 
 @media (max-width: 1366px) {
   .abeja {
-    margin-top: calc(100vh - 550px) !important;
+    margin-top: calc(100vh - 650px) !important;
   }
 }
 
