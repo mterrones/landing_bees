@@ -1,9 +1,15 @@
+@media (max-width: 992px) {
+  main {
+    background-size: 100% 100% !important;
+  }
+}
+
 main {
   background-color: #FFFF00;
   background-image: url("./fondoWeb.jpeg");
   background-clip: content-box;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -78,6 +84,8 @@ form {
     margin-top: 30px;
   }
 }
+
+
 
 .abeja button {
   width: 150px;
