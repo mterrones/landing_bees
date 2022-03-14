@@ -11,6 +11,10 @@ main {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+form {
+  display: unset!important;
+}
+
 .card-body {
   box-shadow: -3px 23px 27px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: -3px 23px 27px 0px rgba(0,0,0,0.75);

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,14 +37,15 @@
         <div class="card card-form align-middle">
           <div class="card-body">
 
+          <form id="cpa-form" action="enviarDatos.php" method="post">
             <div class="row px-4 row-form">
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">NOMBRE</label>
-                <input type="email" class="form-control input" id="exampleFormControlInput1">
+                <input type="text" class="form-control input" id="exampleFormControlInput1" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">APELLIDO</label>
-                <input type="email" class="form-control input" id="exampleFormControlInput1">
+                <input type="text" class="form-control input" id="exampleFormControlInput1" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">CORREO (opcional)</label>
@@ -51,16 +53,17 @@
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">TELÉFONO</label>
-                <input type="email" class="form-control input" id="exampleFormControlInput1">
+                <input type="number" class="form-control input" id="exampleFormControlInput1" required>
               </div>
             </div>
 
             <div class="row abeja mt-4 justify-content-end">
-              <button>
+              <button type="submit" >
                 <img src="./assets/img/abeja.png" alt="">
               </button>
             </div>
 
+          </form>
           </div>
         </div>
       </main>
