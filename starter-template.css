@@ -50,11 +50,18 @@ form {
   }
 }
 
+@media (max-width: 1450px) {
+  .abeja {
+    margin-top: calc(100vh - 570px) !important;
+  }
+}
+
 @media (max-width: 1366px) {
   .abeja {
     margin-top: calc(100vh - 550px) !important;
   }
 }
+
 
 .abeja img {
   width: 150px;
