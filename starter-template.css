@@ -11,6 +11,10 @@ main {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+.card-form {
+  width: 70%
+}
+
 .icon-list {
   padding-left: 0;
   list-style: none;
@@ -42,11 +46,30 @@ main {
   }
 }
 
-
-
-
 .abeja img {
   width: 150px;
+}
+
+@media (max-width: 480px) {
+  main {
+    align-items: center;
+    background-image: url("./fonfoMoSinForm.jpeg");
+  }
+
+  
+
+  .card-form {
+    width: 90%
+  }
+
+  .abeja {
+    justify-content: center!important;
+    margin-top: 30px !important;
+  }
+
+  .abeja img {
+    width: 70px;
+  }
 }
 
 .abeja button {
