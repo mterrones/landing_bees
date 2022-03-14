@@ -12,15 +12,5 @@
             
             $result = mysqli_query($conection,"insert into user (nombre, apellido, correo, telefono) values('$nombre', '$apellido', '$correo', '$telefono')");
             
-
-            if($result){
-                echo "<script language='javascript'> 
-                    alert('Un agente se estará comunicando con usted'); 
-                    location.href='index.html';
-                </script>";
-                // header('Location:index.html');
-            }else {
-                echo "<script> alert('se mandaron datos'); </script>";
-                header('Location:index.html');
-            }
+            echo 'success';
     }
