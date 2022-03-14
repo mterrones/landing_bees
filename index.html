@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Registro Bees!</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/">
@@ -37,23 +36,23 @@
         <div class="card card-form align-middle">
           <div class="card-body">
 
-          <form action="enviarDatos.php" method="post">
+          <form action="enviarDatos.php" method="post" name="form-user">
             <div class="row px-4 row-form">
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">NOMBRE</label>
-                <input type="text" class="form-control input" id="exampleFormControlInput1" required>
+                <input type="text" class="form-control input" id="exampleFormControlInput1" name="nombre" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">APELLIDO</label>
-                <input type="text" class="form-control input" id="exampleFormControlInput1" required>
+                <input type="text" class="form-control input" id="exampleFormControlInput1" name="apellido" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">CORREO (opcional)</label>
-                <input type="email" class="form-control input" id="exampleFormControlInput1">
+                <input type="email" class="form-control input" id="exampleFormControlInput1" name="correo">
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">TELÉFONO</label>
-                <input type="number" class="form-control input" id="exampleFormControlInput1" required>
+                <input type="number" class="form-control input" id="exampleFormControlInput1" name="telefono" required>
               </div>
             </div>
 
