@@ -45,19 +45,19 @@
             <div class="row px-4 row-form">
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">NOMBRE</label>
-                <input type="text" class="form-control input" id="exampleFormControlInput1" name="nombre" required>
+                <input type="text" class="form-control input" name="nombre" id="nombre" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">APELLIDO</label>
-                <input type="text" class="form-control input" id="exampleFormControlInput1" name="apellido" required>
+                <input type="text" class="form-control input" name="apellido" id="apellido" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">TELÉFONO</label>
-                <input type="number" class="form-control input" id="exampleFormControlInput1" name="telefono" required>
+                <input type="number" class="form-control input" name="telefono" id="telefono" required>
               </div>
               <div class="col-lg-6 form-input">
                 <label for="exampleFormControlInput1" style="font-weight: bold;">CORREO (opcional)</label>
-                <input type="email" class="form-control input" id="exampleFormControlInput1" name="correo">
+                <input type="email" class="form-control input" name="correo" id="correo">
               </div>
               
             </div>
@@ -88,10 +88,7 @@
 <script>
   var toastLiveExample = document.getElementById('liveToast')
   var btn = document.getElementById('submit')
-  var nombre = document.getElementsByName('nombre')
-  var apellido = document.getElementsByName('apellido')
-  var correo = document.getElementsByName('correo')
-  var telefono = document.getElementsByName('telefono')
+
   var form = new FormData();
 
   function showToast() {
@@ -111,6 +108,11 @@
 
       e.preventDefault();
 
+      var nombre = document.getElementById('nombre').value
+      var apellido = document.getElementById('apellido').value
+      var correo = document.getElementById('correo').value
+      var telefono = document.getElementById('telefono').value
+      
       form.append("nombre", nombre);
       form.append("apellido", apellido);
       form.append("correo", correo);
@@ -134,4 +136,15 @@
 });
 
 
+
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXHM5B08WT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZXHM5B08WT');
 </script>
